@@ -65,15 +65,75 @@ html, body {
 main { 
     flex: 1;
 }
+/* Sección del equipo */
+.team-intro {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
+.team-intro h1 {
+    font-size: 40px;
+    color: #fff;
+}
 
-
-    /* SECTION */
-
-
-    
-    /* FOOTER */
-
+.team-intro p {
+    font-size: 16px;
+    color: #fff;
+}
+/*CARDS*/
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+.card {
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    align-items: flex-start; 
+    background-color: #D9D9D9;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 50px;      
+}
+.card img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.card h3 {
+    font-size: 18px;
+    color: #132E4D;
+    margin: 0;
+}
+.card p {
+    color: #132E4D;
+    margin: 5px 0 0 0;
+}
+.card-content {
+    display: flex;
+    flex-direction: column; 
+}
+/*BOTON DE CARDS*/
+.btn {
+    padding: 10px 15px;
+    background-color: #252A2E;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+.btn:hover {
+    background-color: #B9BABC;
+    transition: 0.3s;
+    color: #132E4D;
+}    
 /* FOOTER */
 footer {
     background-color: #071428;
