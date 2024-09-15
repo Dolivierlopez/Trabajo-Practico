@@ -1,0 +1,41 @@
+body {
+    background-color: #132E4D;;
+}
+/* MAIN */
+main { 
+    flex: 1;
+}
+/* Sección del equipo */
+.team-intro {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.team-intro h1 {
+    font-size: 40px;
+    color: #fff;
+}
+
+.team-intro p {
+    font-size: 16px;
+    color: #fff;
+}
+/*CARDS*/
+.team-intro h1 {
+    color: #ffffff;
+}
+
+.team-intro p {
+    color: #ffffff;
+}
+
+.card-title {
+    font-size: 18px;
+    color: #132E4D;
+}
+
+.card-text {
+    color: #132E4D;
+}
+
