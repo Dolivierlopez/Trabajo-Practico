@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
+    background-color: #132E4D
 }
 /* NAV BAR */
 .navbar {
@@ -30,7 +31,6 @@ html, body {
 }
 
 .nav-link {
-    color: white;
     margin: 0 10px;
 }
 
@@ -42,15 +42,11 @@ html, body {
 .nav-link.active {
     color: #f8f9fa;
 }
-.navbar {
-    background-color: #030912;
-}
 
 
 .navbar-brand {
     display: flex;
     align-items: center; 
-    color: white; 
 }
 
 .navbar-brand img {
@@ -64,88 +60,158 @@ html, body {
     color: white; 
 }
 
-.nav-link.active {
-    color: #f8f9fa; 
-}
+
 .navbar-brand {
     text-decoration: none !important;
-    color: white !important; 
 } 
 
 .navbar-toggler {
     border: none;
+} 
+
+
+.nav-link.active {
+    color: #7b9cbc !important;
+    background-color: #1e2832; 
+    border-radius: 5px;
 }
 
-.navbar-toggler-icon {
-    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath stroke="white" stroke-width="3" d="M5 7h20M5 15h20M5 23h20" /%3E%3C/svg%3E');
-    background-size: 100% 100%;
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+.hero-container {
+    display: flex;
+    flex-direction:row-reverse;
+    align-items: center;
+    gap: 1rem; 
+}
+.hero-text {
+    max-width: 100%;
+}
+@media (max-width: 767.98px) {
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-image {
+        margin-bottom: 1rem;
+    }
 }
 
-/* BACKGROUND-IMAGE */
-.bg-image {
-    background-image: url('./image/hero-image.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; 
-    width: 99vw; 
-    height: 100vh;
-    overflow: hidden;
-    padding: 20px;
-    position: relative;
-    box-sizing: border-box;
-    text-align: center;
-    color: white;
-}
 
-.bg-image h1 {
-    margin: 0;
-    font-size: 3.5rem; 
-    text-align: center;
-}
-
-/* BOTONES-INICIO */
-.btn-custom {
-    margin: 0 10px;
-    background-color: #252A2E;
-    border-color: #252A2E;
-    color: white;
+.team-section-title {
+    font-size: 2rem;
     font-weight: bold;
+    color: #333;
 }
 
-.btn:hover {
-    background-color:#252A2E ;
+.card-container {
+    border-radius: 15px;
+    border: 1px solid #071428;
+    overflow: hidden;
+    background-color: #071428;
 }
 
-/*@MEDIA DE 780px A 400px*/
-@media (max-width: 780px) {
-    .bg-image {
+.rounded-square {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 100%; 
+    max-width: 300px; 
+}
+
+
+main {
+    padding: 50px 0;
+}
+
+footer{
+    background-color: #071428
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-info .info-row {
+    display: flex;
+    gap: 250px; 
+}
+
+.footer-info p {
+    margin: 0;
+}
+
+.footer-logo {
+    margin-left: auto; 
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 767px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
-    .bg-image h1 {
-        font-size: 2.5rem;
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+        text-align: center;
     }
 
-    .btn-custom {
-        margin: 10px;
+    .footer-info .info-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-info .info-row p {
+        margin: 0;
+    }
+
+    .footer-bottom {
+        margin-bottom: 10px;
+    }
+
+    .footer-logo {
+        margin-top: 10px;
+        margin-bottom: 0;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }
 
-@media (max-width: 400px) {
-    .bg-image h1 {
-        font-size: 1.2rem;
-    }
 
-    .navbar-brand {
-        font-size: 0.9rem;
+@media (max-width: 767.98px) {
+    .hero-container {
+        flex-direction: column;
+        align-items: flex-start;
     }
-
-    .navbar-brand img {
-        width: 40px; 
-        height: 40px;
-    }
-
-    .nav-link {
-        font-size: 0.9rem; 
+    .hero-image {
+        margin-bottom: 1rem;
     }
 }
